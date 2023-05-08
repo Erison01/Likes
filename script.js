@@ -1,9 +1,7 @@
-function counterAdd(){
-counter.innerText=Number(counter.innerText)+1
-}
-function countAdd(){
-    count.innerText=Number(count.innerText)+1
-}
-function counterrAdd(){
-    counterr.innerText=parseInt(counterr.innerText)+1
+var likes= [9,12,9];
+
+function countAdd(index){
+likes[index]++;
+const countElement=document.querySelector("#count"+(index + 1));
+countElement.textContent=likes[index];
 }
